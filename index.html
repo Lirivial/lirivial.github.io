@@ -8,54 +8,76 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/brands.css">
+  
+  <style>
+    /* Принудительное выстраивание кнопок в красивый столбик */
+    .music-list {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .music-btn {
+      display: block !important;
+      width: 100% !important;
+      box-sizing: border-box;
+      text-align: center;
+      padding: 16px 20px;
+      margin-bottom: 14px !important;
+      border-radius: 30px !important;
+      text-decoration: none !important;
+      font-weight: bold !important;
+      font-family: sans-serif;
+      font-size: 16px;
+      transition: transform 0.2s ease, filter 0.2s ease;
+    }
+    .music-btn:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.1);
+    }
+  </style>
 </head>
 <body>
 
-  <div class="container">
-    <div class="row">
-      <div class="column" style="margin-top: 7%">
+  <div class="container" style="text-align: center; padding-top: 40px;">
 
-        <!-- АВА / ОБЛОЖКА -->
-        <!-- Чтобы обновить картинку, просто загрузите ваше фото в папку images под именем avatar.png -->
-        <img class="avatar" src="images/avatar.png" alt="Lirivial">
+    <!-- АВА / ОБЛОЖКА -->
+    <img class="avatar" src="images/avatar.png" alt="Lirivial" style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 20px;">
 
-        <!-- ИМЯ ПРОЕКТА -->
-        <h1>Lirivial</h1>
+    <!-- ИМЯ ПРОЕКТА -->
+    <h1 style="font-size: 32px; margin-bottom: 10px; font-family: sans-serif;">Lirivial</h1>
 
-        <!-- ОПИСАНИЕ -->
-        <p style="margin-bottom: 25px; padding: 0 10px; color: #b3b3b3; line-height: 1.4;">
-          Независимый музыкально-аналитический D.I.Y.-проект.<br>
-          Панк-рок, альтернатива, рэп-рок.
-        </p>
+    <!-- ОПИСАНИЕ -->
+    <p style="margin-bottom: 30px; padding: 0 15px; color: #666; line-height: 1.5; font-family: sans-serif;">
+      Независимый музыкально-аналитический D.I.Y.-проект.<br>
+      Панк-рок, альтернатива, рэп-рок.
+    </p>
 
-        <!-- МУЗЫКАЛЬНЫЕ ПЛОЩАДКИ -->
-        <div class="links">
+    <!-- МУЗЫКАЛЬНЫЕ ПЛОЩАДКИ (СТОЛБИКОМ) -->
+    <div class="music-list">
 
-          <!-- YANDEX MUSIC -->
-          <a class="btn btn-yandex" href="https://music.yandex.ru/artist/11217693" target="_blank" rel="noopener" style="background-color: #ffcc00; color: #000; border: none; margin-bottom: 12px; font-weight: bold;">Яндекс Музыка</a>
+      <!-- YANDEX MUSIC -->
+      <a class="music-btn" href="https://yandex.ru" target="_blank" rel="noopener" style="background-color: #ffcc00; color: #000000;">Яндекс Музыка</a>
 
-          <!-- VK MUSIC -->
-          <a class="btn btn-vk" href="https://vk.com/lirivial" target="_blank" rel="noopener" style="background-color: #0077ff; color: #fff; border: none; margin-bottom: 12px; font-weight: bold;">VK Музыка</a>
+      <!-- VK MUSIC -->
+      <a class="music-btn" href="https://vk.com" target="_blank" rel="noopener" style="background-color: #0077ff; color: #ffffff;">VK Музыка</a>
 
-          <!-- SPOTIFY -->
-          <a class="btn btn-spotify" href="https://open.spotify.com/artist/5gXRvevWLjEJGHvVoO2xZz" target="_blank" rel="noopener" style="margin-bottom: 12px; font-weight: bold;">Listen on Spotify</a>
+      <!-- SPOTIFY -->
+      <a class="music-btn" href="https://spotify.com" target="_blank" rel="noopener" style="background-color: #1ed760; color: #000000;">Listen on Spotify</a>
 
-          <!-- APPLE MUSIC -->
-          <a class="btn btn-apple-music" href="https://apple.com" target="_blank" rel="noopener" style="margin-bottom: 12px; font-weight: bold;">Listen on Apple Music</a>
+      <!-- APPLE MUSIC -->
+      <a class="music-btn" href="https://apple.com" target="_blank" rel="noopener" style="background-color: #fc3c44; color: #ffffff;">Listen on Apple Music</a>
 
-          <!-- YOUTUBE -->
-          <a class="btn btn-youtube" href="https://www.youtube.com/c/Lirivial" target="_blank" rel="noopener" style="margin-bottom: 12px; font-weight: bold;">YouTube канал</a>
+      <!-- YOUTUBE -->
+      <a class="music-btn" href="https://youtube.com" target="_blank" rel="noopener" style="background-color: #ff0000; color: #ffffff;">YouTube канал</a>
 
-          <!-- BOOSTY (Скачать треки бесплатно) -->
-          <a class="btn btn-boosty" href="https://boosty.to/lirivial" target="_blank" rel="noopener" style="background-color: #f15f22; color: #fff; border: none; margin-bottom: 12px; font-weight: bold;">Скачать треки на Boosty</a>
+      <!-- BOOSTY -->
+      <a class="music-btn" href="https://boosty.to" target="_blank" rel="noopener" style="background-color: #f15f22; color: #ffffff;">Скачать треки на Boosty</a>
 
-          <!-- TELEGRAM -->
-          <a class="btn btn-telegram" href="https://t.me/lirivial" target="_blank" rel="noopener" style="margin-bottom: 12px; font-weight: bold;">Telegram-канал</a>
+      <!-- TELEGRAM -->
+      <a class="music-btn" href="https://t.me" target="_blank" rel="noopener" style="background-color: #24a1de; color: #ffffff;">Telegram-канал</a>
 
-        </div>
-
-      </div>
     </div>
+
   </div>
 
 </body>
