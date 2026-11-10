@@ -373,3 +373,35 @@ footer {
 .button {
 	box-shadow:0 2px 8px rgba(0,0,0,.35);
 }
+
+/* Language switch RU / EN
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.lang-switch {
+	position:absolute;
+	top:var(--spacing-m);
+	right:var(--spacing-m);
+	display:flex;
+	border:2px solid #1a1a1a;
+	border-radius:999px;
+	background:#fff;
+	overflow:hidden;
+	z-index:2;
+}
+.lang-switch .lang-btn {
+	width:auto;
+	min-height:0;
+	margin:0;
+	padding:0.25rem 0.75rem;
+	font-size:0.875rem;
+	font-weight:700;
+	line-height:1.2;
+	border:none;
+	border-radius:0;
+	background:transparent;
+	color:#1a1a1a;
+	cursor:pointer;
+}
+.lang-switch .lang-btn[aria-pressed="true"] {
+	background:#1a1a1a;
+	color:#fff;
+}
