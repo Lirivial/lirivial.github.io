@@ -7,7 +7,7 @@
   - theme-dark: Forces dark theme
 -->
 
-<html class="theme-light" lang="en"> <!-- Update `class="theme-auto"` with your preference -->
+<html class="theme-light" lang="ru"> <!-- Update `class="theme-auto"` with your preference -->
 
   <head>
     <meta charset="utf-8">
@@ -27,17 +27,14 @@
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
 
-    <!-- Social Sharing (Open Graph & Twitter) - Uncomment and fill in to control how your page
-         looks when shared on social platforms and in chat apps.
-         og:url and og:image must be full absolute URLs. -->
-    <!--
+    <!-- Social Sharing (Open Graph & Twitter): link preview in Telegram, VK, Instagram, etc. -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Your Name">
-    <meta property="og:description" content="A short description of your page.">
-    <meta property="og:url" content="https://yourwebsite.com">
-    <meta property="og:image" content="https://yourwebsite.com/images/avatar@2x.png">
+    <meta property="og:title" content="Lirivial">
+    <meta property="og:description" content="Punk / Alternative / Rap-rock. Все песни и соцсети в одном месте. All songs and socials in one place.">
+    <meta property="og:url" content="https://lirivial.github.io/">
+    <meta property="og:image" content="https://lirivial.github.io/images/avatar@2x.png">
     <meta name="twitter:card" content="summary">
-    -->
+
 
     <!-- Font Preloads - Lets the browser fetch fonts in parallel with the stylesheets -->
     <link rel="preload" href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -62,6 +59,10 @@
 <body>
 
     <div class="container">
+        <div class="lang-switch" role="group" aria-label="Language / Язык">
+          <button type="button" class="lang-btn" data-lang="ru" data-umami-event="lang-ru" aria-pressed="true">RU</button>
+          <button type="button" class="lang-btn" data-lang="en" data-umami-event="lang-en" aria-pressed="false">EN</button>
+        </div>
         <div class="column">
           <main>
 
@@ -80,50 +81,50 @@
 
             <!-- Add a short description about yourself or your brand -->
             <p>Punk / Alternative / Rap-rock<br>
-             Проект с текстами заставляющими задуматься!<br>
+             <span data-i18n="tagline">Проект с текстами заставляющими задуматься!</span>
             </p>
            
             <!-- All your buttons go here -->
             <nav class="button-stack" aria-label="Links">
                 <!-- YouTube -->
-              <a data-umami-event="click-youtube" class="button button-yt" href="https://www.youtube.com/@Lirivial?sub_confirmation=1" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/youtube.svg" alt="YouTube Logo">Смотри на YouTube</a>
+              <a data-umami-event="click-youtube" class="button button-yt" href="https://www.youtube.com/@Lirivial?sub_confirmation=1" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/youtube.svg" alt="YouTube Logo"><span data-i18n="yt">Смотри на YouTube</span></a>
 
               <!-- Apple Music -->
-              <a data-umami-event="click-apple-music" class="button button-apple-music" href="https://music.apple.com/by/artist/lirivial/1561378213" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/apple-music.svg" alt="Apple Music Logo">Слушай на Apple Music</a>
+              <a data-umami-event="click-apple-music" class="button button-apple-music" href="https://music.apple.com/by/artist/lirivial/1561378213" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/apple-music.svg" alt="Apple Music Logo"><span data-i18n="apple">Слушай на Apple Music</span></a>
 
               <!-- Spotify Alt -->
-              <a data-umami-event="click-spotify" class="button button-spotify-alt" href="https://open.spotify.com/artist/5gXRvevWLjEJGHvVoO2xZz" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/spotify-alt.svg" alt="Spotify Logo">Или на Spotify</a>
+              <a data-umami-event="click-spotify" class="button button-spotify-alt" href="https://open.spotify.com/artist/5gXRvevWLjEJGHvVoO2xZz" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/spotify-alt.svg" alt="Spotify Logo"><span data-i18n="spotify">Или на Spotify</span></a>
 
               <!-- Yandex Music -->
-              <a data-umami-event="click-yandex-music" class="button button-apple-music" href="https://music.yandex.by/artist/11217693" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/Yandex_Music_icon_2023.svg" alt="Yandex Music Logo">Да хоть на Yandex Music</a>
+              <a data-umami-event="click-yandex-music" class="button button-apple-music" href="https://music.yandex.by/artist/11217693" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/Yandex_Music_icon_2023.svg" alt="Yandex Music Logo"><span data-i18n="yandex">Да хоть на Yandex Music</span></a>
 
               <!-- Telegram -->
-              <a data-umami-event="click-telegram" class="button button-yt" href="https://t.me/lirivial" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/telegram.svg" alt="Telegram Logo">Примкни в Telegram</a>
+              <a data-umami-event="click-telegram" class="button button-yt" href="https://t.me/lirivial" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/telegram.svg" alt="Telegram Logo"><span data-i18n="tg">Примкни в Telegram</span></a>
   
               <!-- Instagram -->
-              <a data-umami-event="click-instagram" class="button button-apple-music" href="https://www.instagram.com/lirivial" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/instagram.svg" alt="Instagram Logo">Следи в Instagram</a>
+              <a data-umami-event="click-instagram" class="button button-apple-music" href="https://www.instagram.com/lirivial" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/instagram.svg" alt="Instagram Logo"><span data-i18n="ig">Следи в Instagram</span></a>
 
               <!-- TikTok -->
-              <a data-umami-event="click-tiktok" class="button button-yt" href="https://www.tiktok.com/@lirivial" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/tiktok.svg" alt="TikTok Logo">Танцуй в TikTok</a>
+              <a data-umami-event="click-tiktok" class="button button-yt" href="https://www.tiktok.com/@lirivial" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/tiktok.svg" alt="TikTok Logo"><span data-i18n="tt">Танцуй в TikTok</span></a>
 
              <!-- Facebook -->
-              <a data-umami-event="click-facebook" class="button button-apple-music" href="https://www.facebook.com/Lirivial" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/facebook.svg" alt="Facebook Logo">Старей в Facebook</a>
+              <a data-umami-event="click-facebook" class="button button-apple-music" href="https://www.facebook.com/Lirivial" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/facebook.svg" alt="Facebook Logo"><span data-i18n="fb">Старей в Facebook</span></a>
 
              <!-- Vkontakte -->
-              <a data-umami-event="click-vk" class="button button-yt" href="https://vk.com/widget_community.php?act=a_subscribe_box&oid=-54273754&state=1" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/VK_Logo_White.svg" alt="Vk Logo">Вспомни стену в VK</a>
+              <a data-umami-event="click-vk" class="button button-yt" href="https://vk.com/widget_community.php?act=a_subscribe_box&oid=-54273754&state=1" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/VK_Logo_White.svg" alt="Vk Logo"><span data-i18n="vk">Вспомни стену в VK</span></a>
             
               <!-- Threads -->
-              <a data-umami-event="click-threads" class="button button-threads" href="https://www.threads.com/@lirivial" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/threads.svg" alt="Threads Logo">Читай в Threads</a>
+              <a data-umami-event="click-threads" class="button button-threads" href="https://www.threads.com/@lirivial" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/threads.svg" alt="Threads Logo"><span data-i18n="threads">Читай в Threads</span></a>
 
                <!-- Boosty -->
-              <a data-umami-event="click-boosty" class="button button-yt" href="https://boosty.to/lirivial" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/boosty-dark.svg" alt="Boosty Logo">Изучай песни на Boosty</a>
+              <a data-umami-event="click-boosty" class="button button-yt" href="https://boosty.to/lirivial" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/boosty-dark.svg" alt="Boosty Logo"><span data-i18n="boosty">Изучай песни на Boosty</span></a>
 
               <!-- Utorrent -->
-              <a data-umami-event="click-torrent" class="button button-threads" href="https://rutracker.org/forum/dl.php?t=6831054" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/brand-utorrent-svgrepo-com.svg" alt="Utorrent Logo">Или скачай всю дискографию</a>
+              <a data-umami-event="click-torrent" class="button button-threads" href="https://rutracker.org/forum/dl.php?t=6831054" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/brand-utorrent-svgrepo-com.svg" alt="Utorrent Logo"><span data-i18n="torrent">Или скачай всю дискографию</span></a>
 </nav>
 
-              <p>Главное...<br>
-              <strong>Думай своей головой - это бесплатно!</strong></p>
+              <p><span data-i18n="main">Главное...</span><br>
+              <strong data-i18n="free">Думай своей головой - это бесплатно!</strong></p>
       </main>
 
       <!-- Feel free to add your own footer information, including updating `privacy.html` to reflect how your LittleLink fork is set up -->
@@ -133,6 +134,57 @@
 
     </div>
   </div>
+
+  <script>
+  (function () {
+    var EN = {
+      yt: 'Watch on YouTube',
+      apple: 'Listen on Apple Music',
+      spotify: 'Or on Spotify',
+      yandex: 'Even on Yandex Music',
+      tg: 'Join on Telegram',
+      ig: 'Follow on Instagram',
+      tt: 'Dance on TikTok',
+      fb: 'Grow old on Facebook',
+      vk: 'Remember the wall on VK',
+      threads: 'Read on Threads',
+      boosty: 'Study the songs on Boosty',
+      torrent: 'Or download the full discography',
+      tagline: 'Thought-provoking lyrics!',
+      main: 'The main thing...',
+      free: 'Think for yourself - it\u2019s free!'
+    };
+    var nodes = document.querySelectorAll('[data-i18n]');
+    var RU = {};
+    nodes.forEach(function (n) { RU[n.getAttribute('data-i18n')] = n.textContent; });
+
+    function apply(lang, persist) {
+      var dict = lang === 'en' ? EN : RU;
+      nodes.forEach(function (n) {
+        var k = n.getAttribute('data-i18n');
+        if (dict[k] != null) n.textContent = dict[k];
+      });
+      document.documentElement.lang = lang;
+      document.querySelectorAll('.lang-btn').forEach(function (b) {
+        b.setAttribute('aria-pressed', b.getAttribute('data-lang') === lang ? 'true' : 'false');
+      });
+      if (persist) { try { localStorage.setItem('lang', lang); } catch (e) {} }
+    }
+
+    document.querySelectorAll('.lang-btn').forEach(function (b) {
+      b.addEventListener('click', function () { apply(b.getAttribute('data-lang'), true); });
+    });
+
+    var lang = 'ru';
+    try {
+      var fromUrl = new URLSearchParams(location.search).get('lang');
+      var saved = localStorage.getItem('lang');
+      if (fromUrl === 'en' || fromUrl === 'ru') lang = fromUrl;
+      else if (saved === 'en' || saved === 'ru') lang = saved;
+    } catch (e) {}
+    apply(lang, false);
+  })();
+  </script>
 
 </body>
 
