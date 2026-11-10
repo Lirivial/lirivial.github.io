@@ -56,7 +56,7 @@
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	color:#1a1a1a;
-	font-family:"Road Rage","Open Sans",system-ui;
+	font-family:"Open Sans",system-ui;
     font-weight:400;
 	line-height:1.6;
 }
@@ -330,39 +330,36 @@ ul li {
 	src:url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.woff2') format('woff2');
 }
 
-/* Road Rage font (regular text uses the 600 file; no separate regular file)
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@font-face {
-	font-display:swap;
-	font-family:'Road Rage';
-	font-style:normal;
-	font-weight:400 600;
-	src:url('../fonts/roadrage-600.woff2') format('woff2');
-}
-@font-face {
-	font-display:swap;
-	font-family:'Road Rage';
-	font-style:normal;
-	font-weight:700;
-	src:url('../fonts/roadrage-700.woff2') format('woff2');
-}
-@font-face {
-	font-display:swap;
-	font-family:'Road Rage';
-	font-style:normal;
-	font-weight:800;
-	src:url('../fonts/roadrage-800.woff2') format('woff2');
-}
-
-/* Mobile background + button readability
+/* Mobile background: fixed layer sized to the screen (keeps the image sharp, no stretching on tall pages)
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (max-width:48rem) {
 	body {
-		background-image:url('../images/bg-mobile.webp');
-		background-position:center top;
-		background-attachment:scroll;
+		background-image:none;
+	}
+	body::before {
+		content:"";
+		position:fixed;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		z-index:-1;
+		background:url('../images/bg-mobile.webp') center / cover no-repeat;
 	}
 }
+
+/* White outline around text so it stays readable on the busy background
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1,
+.container p,
+footer {
+	text-shadow:
+		-2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff,
+		0 -2px 0 #fff, 0 2px 0 #fff, -2px 0 0 #fff, 2px 0 0 #fff,
+		0 0 10px #fff;
+}
+
+/* Buttons */
 .button {
 	box-shadow:0 2px 8px rgba(0,0,0,.35);
 }
