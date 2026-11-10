@@ -360,7 +360,16 @@ footer {
 		-2px -4px 0 #fff, 2px -4px 0 #fff, -2px 4px 0 #fff, 2px 4px 0 #fff,
 		0 0 12px #fff;
 }
+/* Text sizes (buttons are not affected) */
+h1 { font-size:4rem; }                 /* название Lirivial, было ~3.05rem */
+.container p { font-size:1.6rem; }     /* описание и «Думай своей головой», было 1.25rem */
+footer { font-size:1.25rem; }          /* ©Lirivial, было 1rem */
 
+@media (max-width:34.375rem) {         /* телефоны */
+  h1 { font-size:3rem; }               /* было 2rem */
+  .container p { font-size:1.3rem; }   /* было 1rem */
+  footer { font-size:1.1rem; }
+}
 /* Buttons */
 .button {
 	box-shadow:0 2px 8px rgba(0,0,0,.35);
